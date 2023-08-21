@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -7,98 +8,93 @@
 }
 
 
-.logo{
-    position: absolute;
-    color: #FFFF;
-    top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.first{
+    background-attachment: fixed, scroll;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
 }
 
-.img1{
-    background-image: url("imgs/background.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.layer{
-    background-color: rgba(48, 48, 48, 0.7);
+.layer {
+    background-color: rgba(78, 76, 76, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
-.container{
-    position: absolute;
-    top: 25%;
+.pag1{
     width: 100%;
-    background-color: rgba(77, 103, 121, 0.8);
-    color: white;
-    padding:  0px 60px 60px 60px;
-
-
-}
-
-.container h1{
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.container h4{
-    list-style-type: none;
-    display: block;
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-
-.botao1{
-    padding-top: 50px;
-    position: absolute;
-    bottom: 25%;
-    max-width: 100%;
-    min-width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
 }
 
-a{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+.buttonpag1{
+    cursor:pointer;
+    background-color: rgb(108, 125, 156, 0.9);
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.4s;
 }
 
 .botaopag1{
-    font-weight:bold;
-    color: white;
-    cursor: pointer;
-    background-color: rgba(77, 103, 121, 0.8);
-    border: none;
-    height: 60px;
-    width: 500px;
-}
-
-
-
-.wpp{
+    position: relative;
+    z-index: 3;
+    margin-top: 30px;
     display: flex;
-    justify-content: flex-end;
-    margin-left: 10px;
-    width: 25px;
+    justify-content: center;
+}
+
+.buttonpag1:hover{
+    border-color: transparent;
+    background-color: black;
+}
+
+.titulo1{
+    font-size: 33px;
+    text-align: center;
+    padding: 40px;
+    margin: 15% auto 0 auto ;
+    background-color: rgb(108, 125, 156, 0.9);
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+
+}
+
+.conteudo1{
+    font-size: 22px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(108, 125, 156, 0.9);
+    width: 55%;
+    display: flex;
+    justify-content: center;
 }
 
 
-.pag4{
+.pag2{
     width: 100%;
     min-height: 80vh;
     height: auto;
@@ -108,12 +104,12 @@ a{
 }
 
 
-.fourth{
+.second{
     max-width: 52rem;
     padding-left: 5%;
 }
 
-.titulopag4{
+.titulopag2{
     padding-top: 15%;
     text-transform: uppercase;
     font-size: 38px;
@@ -121,7 +117,7 @@ a{
     color: #353535;
 }
 
-.textopag4{
+.textopag2{
     padding-top: 10%;
     text-align: justify;
     font-weight: 300;
@@ -129,12 +125,12 @@ a{
     margin-bottom: 30px;
 }
 
-.imgpag4{
+.imgpag2{
     display: flex;
     align-items: center;
 }
 
-.pag4 img{
+.pag2 img{
     object-fit: cover;
     width: 70%;
     height: 70vh;
@@ -144,4 +140,79 @@ a{
     border-radius: 10px;
     margin: auto;
 }
+
+.pag3{
+    height: auto;
+    background-color: rgb(108, 125, 156);
+    min-height: 80vh;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perguntas{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    color: #ffff;
+}
+
+.space{
+    margin: 12px;
+}
+
+.collapsearea{
+    width: 80%;
+}
+
+
+.collapsible {
+    background-color: #b9b9b9;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    font-size: 16px;
+    font-weight: 500;
+    color: #505050;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .content p {
+    margin-top: 5px;
+  }
+
+
+
 
