@@ -7,6 +7,50 @@
 
 }
 
+.whats-float {
+    position: fixed;
+    transform:translate(115px,0px);
+    top:90%;
+    right:0;
+    width:185px;
+    overflow: hidden;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 10px 0 0 10px;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+    vertical-align: middle
+}
+.whats-float a span {
+    color: white;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    position: absolute;
+    line-height: 16px;
+    font-weight: bolder;
+}
+
+.whats-float i {
+    font-size: 50px;
+    color: white;
+    line-height: 30px;
+    padding: 15px;
+    transform:rotate(0deg);
+    transition: all 0.5s ease-in-out;
+    text-align:center;
+
+}
+
+.whats-float:hover {
+    color: #FFFFFF;
+    transform:translate(0px,0px);
+}
+
+.whats-float:hover i  {
+    transform:rotate(360deg);
+}
+
 
 .first{
     background-attachment: fixed, scroll;
@@ -19,14 +63,7 @@
 }
 
 
-.layer {
-    background-color: rgba(78, 76, 76, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
+
 
 .pag1{
     width: 100%;
@@ -45,7 +82,7 @@
     color: white;
     font-size: 14px;
     font-weight: bold;
-    transition: background-color 0.4s;
+    transition: background-color 0.3s;
 }
 
 .buttonpag1 i {
@@ -54,6 +91,11 @@
     background-color: #25d366;
     color: #fff;
     border-radius: 50%;
+}
+
+.botaopag1 img{
+    margin-bottom: 3px;
+    width: 27px;
 }
 
 .botaopag1{
@@ -66,7 +108,7 @@
 
 .buttonpag1:hover{
     border-color: transparent;
-    background-color: black;
+    background-color: rgb(58, 58, 58);
 }
 
 .titulo1{
@@ -91,7 +133,7 @@
 }
 
 .conteudo1{
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
     padding: 40px;
     margin: 0 auto 0 auto;
@@ -118,6 +160,7 @@
 }
 
 .titulopag2{
+    font-weight: bold;
     padding-top: 15%;
     text-transform: uppercase;
     font-size: 38px;
@@ -176,31 +219,30 @@
 }
 
 .collapsearea{
-    width: 80%;
+    width: 85%;
 }
 
 
 .collapsible {
-    background-color: #b9b9b9;
-    color: white;
+    background-color: #fdfdfdf5;
+    color: rgba(63, 63, 63, 0.89);
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 4px;
+    font-size: 15px;
+    border-radius: 2px;
   }
   
 .active, .collapsible:hover {
-    background-color: #555;
+    background-color: #d8d8d8;
   }
   
 .collapsible:after {
     content: '\002B';
-    color: white;
+    color: rgb(88, 88, 88);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -208,23 +250,26 @@
   
 .active:after {
     content: "\2212";
-  }
+}
+
+.pag4{
+    height: auto;
+}
   
 .content {
     font-size: 16px;
-    font-weight: 500;
     color: #505050;
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
 
 .content p {
-    margin-top: 5px;
+    margin-top: 10px;
     }
 
 .outros{
@@ -243,14 +288,12 @@
 }
 
 .servicoscar{
-    background-color: #fafafa;
+    background-color: #f7f7f7;
     box-sizing: border-box;
     margin: 40px;
     max-width: 320px;
     padding: 50px;
-    border-spacing: 20px 20px;
-    border:rgb(108, 125, 156, 0.1) solid;
-    border-radius: 4px;
+
     
 }
 
@@ -308,6 +351,11 @@
     color: #fff;
 }
 
+.contatopag4 h4:hover{
+    background-color: #505050;
+    transition: 0.2s;
+}
+
 .contato i {
     padding: 6px;
     font-size: 22px;
@@ -316,65 +364,132 @@
     border-radius: 50%;
 }
 
+.contato img{
+    width: 25px;
+}
+
 .contatopag4 a {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.whats-float {
-      position: fixed;
-      transform:translate(108px,0px);
-      top:90%;
-      right:0;
-      width:170px;
-      overflow: hidden;
-      background-color: #25d366;
-      color: #FFF;
-      border-radius: 10px 0 0 10px;
-      z-index: 10;
-      transition: all 0.4s ease-in-out;
-      vertical-align: middle
+.pag5{
+    margin-top: 90px;
 }
-.whats-float a span {
-      color: white;
-      font-size: 15px;
-      padding-top: 8px;
-      padding-bottom: 10px;
-      position: absolute;
-      line-height: 16px;
-      font-weight: bolder;
+
+.contatoform{
+    font-weight: bold;
+    font-size: 35px;
+    color: #4b4b4b;
+    margin-top: 50px !important;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    width: 50% !important;
 }
-  
-.whats-float i {
-      font-size: 50px;
-      color: white;
-      line-height: 30px;
-      padding: 15px;
-      transform:rotate(0deg);
-      transition: all 0.5s ease-in-out;
-      text-align:center;
-  
+
+.formulariocontato{
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(108, 125, 156, 0.9);
+
 }
-  
-.whats-float:hover {
-      color: #FFFFFF;
-      transform:translate(0px,0px);
+
+.text-center a{
+    font-weight: 600;
+    color: #505050;
+    background-color: #ffff;
+    border: none;
+    width: 150px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 1px -1px rgb(0 0 0 / 0.1);
+
 }
-  
-.whats-float:hover i  {
-      transform:rotate(360deg);
+
+.btn:hover{
+    background-color: #353535 !important;
 }
+
+.row{
+    margin: 0 !important;
+
+}
+
+.row input{
+    border-radius: 1px;
+    border: none;
+}
+
+.row textarea{
+    border-radius: 1px;
+    border: none;
+}
+
+.list-unstyled img{
+    width: 120px;
+}
+
+#contatobts{
+    border-radius: 1px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+    background-color: rgba(252, 252, 252, 0.8);
+
+}
+
+
+
+@media (max-width: 1280px){
+    .layer{
+        min-height: 108vh;
+        
+    }
+    .botaopag1{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .titulo1{
+        width: 70%;
+    }
+    .conteudo1{
+        width: 70%;
+    }
+
+    .second{
+        padding: 0;
+        width: 88%;
+    }
+
+    .conteudopag2{
+        width: 90%;
+    }
+
+    .textopag2{
+        width: 90%;
+    }
+
+    .pag2 img{
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .pag3{
+        min-height: 100vh;
+    }
+
+    .servicoscar{
+        margin: 54px;
+    }
+
+    #contatobts{
+        width: 80%;
+    }
+    
+}
+
+
+
+
 
 
