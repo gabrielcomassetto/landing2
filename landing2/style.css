@@ -552,7 +552,7 @@
         width: 30px;
     }
 
-    .contato{
+    .contato4 h3{
         margin: 20px;
     }
 
@@ -562,6 +562,48 @@
 }
 
 @media(max-width: 420px){
+
+    .first{
+        min-height: 80vh;
+    }
+
+    .titulo1{
+        padding: 25px 0 0 0;
+    }
+
+    .conteudo1{
+        padding: 25px 0 15px 0;
+    }
+
+    .conteudo{
+        padding-top: 60px;
+    }
+
+    .botaopag1{
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 11px !important;
+    }
+
+    .buttonpag1{
+        font-size: 12px;
+    }
+
+    .contato4 h3{
+        font-size: 18px;
+        margin: 12px;
+
+    }
+
+    .contato img{
+        display: initial;
+    }
+
+    .contatopag4 button{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     .titulo1{
         font-size: 23px;
@@ -586,6 +628,10 @@
 
     .flexservicos{
         margin-top: 40px;
+    }
+
+    #contatobts{
+        margin-top: 50px;
     }
 }
 
