@@ -85,13 +85,6 @@
     transition: background-color 0.3s;
 }
 
-.buttonpag1 i {
-    padding: 6px;
-    font-size: 22px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50%;
-}
 
 .botaopag1 img{
     margin-bottom: 3px;
@@ -342,16 +335,18 @@
     justify-content: center;
 }
 
-.contatopag4 h4{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin-top: 30px;
-    background-color: rgb(108, 125, 156);
-    color: #fff;
+.contatopag4 button{
+    cursor:pointer;
+    background-color: rgb(108, 125, 156, 0.9);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 60px;
 }
 
-.contatopag4 h4:hover{
+.contatopag4 button:hover{
     background-color: #505050;
     transition: 0.2s;
 }
@@ -365,7 +360,11 @@
 }
 
 .contato img{
-    width: 25px;
+    height: 25px;
+    width: 25px;   
+    position: relative;
+    top: 0;
+    bottom: -10px;
 }
 
 .contatopag4 a {
@@ -392,7 +391,7 @@
     width:  100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(108, 125, 156, 0.9);
+    background-color: rgb(229, 233, 241);
 
 }
 
@@ -416,11 +415,13 @@
 }
 
 .row input{
+    box-shadow: 0 1px 30px 1px rgb(0 0 0 / 0.1), 0 1px 1px -1px rgb(0 0 0 / 0.1);
     border-radius: 1px;
     border: none;
 }
 
 .row textarea{
+    box-shadow: 0 1px 30px 1px rgb(0 0 0 / 0.1), 0 1px 1px -1px rgb(0 0 0 / 0.1);
     border-radius: 1px;
     border: none;
 }
@@ -433,8 +434,20 @@
     border-radius: 1px;
     padding-bottom: 20px;
     margin-top: 150px;
-    background-color: rgba(252, 252, 252, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 
+}
+
+
+.footer{
+    width: 100%;
+    background-color: rgba(145, 162, 194, 0.95);
+    height: 120px;
+    margin: 0;
+}
+
+.rodape{
+    margin: 0;
 }
 
 
@@ -474,6 +487,10 @@
         width: 90%;
     }
 
+    .pag2{
+        min-height: 85vh;
+    }
+
     .pag3{
         min-height: 100vh;
     }
@@ -486,6 +503,90 @@
         width: 80%;
     }
     
+}
+
+
+@media (max-width:760px){
+    .pag2 img{
+        display: none;
+    }
+
+    .second{
+        width: 100%;
+    }
+
+    .pag2{
+        padding: 0;
+        min-height: 50vh;
+    }
+
+    .conteudopag2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titulopag2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .textopag2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .contatopag4 h4{
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    .contatopag4 img{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+    }
+
+    .contato{
+        margin: 20px;
+    }
+
+    .servicoscar{
+        margin: 31px;
+    }
+}
+
+@media(max-width: 420px){
+
+    .titulo1{
+        font-size: 23px;
+    }
+
+    .conteudo1{
+        font-size: 18px;
+    }
+
+    .titulopag2{
+        font-size: 26px;
+    }
+
+    .perguntas{
+        font-size: 21px;
+    }
+
+    .outros{
+        margin-top: 60px;
+        font-size: 23px;
+    }
+
+    .flexservicos{
+        margin-top: 40px;
+    }
 }
 
 
