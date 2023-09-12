@@ -23,6 +23,10 @@
 
 <section class="pag1">
     <div class="first">
+        <div class="logoeconteudo">
+        <div class="logo">
+        <img src="img/logo2.jpeg" alt="">
+        </div>
         <div class="conteudo">
         <h1 class="titulo1">ESCRITÓRIO ESPECIALIZADO EM DIREITO DE TRÂNSITO E DIREITO DO CONSUMIDOR</h1>
         <h4 class="conteudo1">
@@ -34,6 +38,7 @@
             	- Defesa em ação de busca e apreensão
             </h4>
         </div>
+    </div>
         <div class="botaopag1">
             <a href="#"><button class="buttonpag1">QUERO ORIENTAÇÃO PROFISSIONAL DE UM ADVOGADO&nbsp;&nbsp;<img src="img/whats.png" alt=""></i></button></a>
         </div>
@@ -176,25 +181,25 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Nome">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nome" required>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                            <input type="text" id="email" name="email" class="form-control" placeholder="E-mail">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                                <input type="text" id="email" name="tel" class="form-control" placeholder="Telefone">
+                                <input type="text" id="email" name="tel" class="form-control" placeholder="Telefone" required>
                             </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                                <input type="text" id="email" name="assunto" class="form-control" placeholder="Assunto">
+                                <input type="text" id="email" name="assunto" class="form-control" placeholder="Assunto" required>
                             </div>
                     </div>
                 </div>
@@ -203,7 +208,7 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="Mensagem"></textarea>
+                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="Mensagem" required></textarea>
                             <label for="message"></label>
                         </div>
 
@@ -211,23 +216,25 @@
                 </div>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                    <a class="btn btn-primary" type="submit" id="enviar">Enviar</a>
                 </div>
                 <div class="status"></div>
             </div>
         </form>
 
 
-        <div class="col-md-3 text-center">
+        <div class="col-md-4 text-center">
             <ul class="list-unstyled mb-0">
-                <li><h2>logo aqui</h2>
+                <li><img src="img/logo2.jpeg" alt="">
                 </li>
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+55(41) 9999-9999</p>
+                    <p><a href="https://wa.me/41998879575">(41) 99887-9575</a></p>
+                    <p><a href="https://wa.me/41996853509">(41) 99685-3509</a></p>
+                    
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contato@hotmail.com</p>
+                    <p><a href="mailto: rigonrattmannadv@gmail.com">rigonrattmannadv@gmail.com</a></p>
                 </li>
             </ul>
 
@@ -243,7 +250,13 @@
 <section class="footer">
     <footer>
         <div class="rodape">
-            <h5 class="rodape">CNPJ?</h5>
+            <h5 class="rodape">Copyright © 2023 - Rigon Rattmann Advogados </h5>
+
+            <p>Este site não é um produto Meta Platforms, Inc., Google LLC. Tampouco oferece serviços públicos oficiais,
+            documentos do Governo, ou serviços financeiros.
+            Somos um escritório de advocacia, que oferece serviços jurídicos, privativos de advogados, de acordo 
+            com a legislação vigente e o Código de Ética e Disciplina da OAB do Brasil.
+            </p>
         </div>
     </footer>
 </section>
