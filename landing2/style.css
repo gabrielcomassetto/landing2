@@ -360,7 +360,9 @@
     color: white;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .contatopag4 button:hover{
@@ -463,12 +465,33 @@
     text-decoration: none;
     font-weight: 600;
     color: #505050;
-    background-color: #ffff;
     border: none;
     width: 150px;
     font-size: 17px;
 }
 
+.contatos{
+    text-decoration: none;
+    font-weight: 600;
+    color: #505050;
+    border: none;
+    width: 150px;
+    font-size: 17px;
+}
+
+.text-center li {
+    list-style-type: none;
+}
+
+.oab{
+    width: auto;
+    text-decoration: none;
+    font-weight: 600;
+    color: #505050;
+    border: none;
+    font-size: 17px;
+    margin-top: 70px;
+}
 
 
 
@@ -543,9 +566,17 @@
     }
 
     #contatobts{
-        width: 80%;
+        width: 90%;
     }
-    
+    .rodape{
+        width: 70%;
+    }
+}
+
+@media(max-width:1000px){
+    #contatobts ul li img{
+        width: 200px;
+    }
 }
 
 
@@ -607,6 +638,10 @@
 
     .servicoscar{
         margin: 31px;
+    }
+
+    #contatobts ul li img{
+        width: 180px;
     }
 }
 
