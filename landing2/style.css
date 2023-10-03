@@ -415,17 +415,22 @@
 }
 
 #enviar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     font-weight: 600;
     color: #505050;
     background-color: #ffff;
     border: none;
     width: 150px;
+    height: 35px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 1px -1px rgb(0 0 0 / 0.1);
 
 }
 
-.btn:hover{
-    background-color: #d6e9f3 !important;
+#enviar:hover{
+    background-color: #e1ecf1 !important;
 }
 
 .row{
@@ -460,6 +465,7 @@
 #contatobts ul li img{
     width: 250px;
 }
+
 
 #contatobts ul li a{
     text-decoration: none;
